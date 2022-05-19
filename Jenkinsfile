@@ -1,3 +1,5 @@
+/* import shared library */
+@Library('shared-library')_
 pipeline {
      environment {
        ID_DOCKER = "carke"
@@ -106,8 +108,6 @@ pipeline {
         }
      }
   }
-  /* import shared library */
-  @Library('shared-library')_
   post {
     always {
       script {
